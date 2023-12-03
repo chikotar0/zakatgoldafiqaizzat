@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Zakat Gold</string>
+
+    <string name="link">
+        Click <a href = "https://github.com/chikotar0/github-chikotar0-zakatgoldcalculatorbyafiqaizzat.git/"> Zakat Gold Mobile Application</a> to visit the website.
+    </string>
+</resources>

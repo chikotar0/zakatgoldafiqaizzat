@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/info_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD700"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/info_toolbar">
+
+            <TextView
+                android:id="@+id/instructionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="70dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Instruction:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/instruction1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:text="1. The user need to insert weight of their gold in weight field."
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:id="@+id/imageinstruction1"
+                android:layout_marginBottom="10dp"
+                android:layout_width="380dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/enterweight" />
+
+            <TextView
+                android:id="@+id/instruction2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:text="2. Next, user needs to choose the type of the gold."
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/imageinstruction2"
+
+                android:layout_marginBottom="10dp"
+                android:layout_width="380dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/choosetype" />
+
+            <TextView
+                android:id="@+id/instruction3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:text="3. Lastly, the user needs to insert the current value of gold."
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/imageinstruction3"
+
+                android:layout_marginBottom="10dp"
+                android:layout_width="380dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/entercurrentvaluegold" />
+
+            <TextView
+                android:id="@+id/instruction4"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:text="4. The result will show below the CLEAR button."
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/imageinstruction4"
+                android:layout_marginBottom="10dp"
+                android:layout_width="380dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/resultzakat" />
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
